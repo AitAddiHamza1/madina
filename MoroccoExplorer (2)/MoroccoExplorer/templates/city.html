@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ city.name_en }} - madina{% endblock %}
+
+{% block content %}
+    <section class="city-detail">
+        <div class="container">
+            <div class="city-header">
+                <h2>{{ city.name_en }}</h2>
+                <p id="city-region">Region: {{ city.region_en }}</p>
+                <p id="city-population">Population: {{ city.population }}</p>
+            </div>
+            
+            <div id="city-detail-map" class="city-detail-map"></div>
+            
+            <div class="city-info">
+                <div class="city-info-card">
+                    <h3 id="about-heading" data-i18n="about_city">About the City</h3>
+                    <p id="description-content">{{ city.description_en }}</p>
+                </div>
+                
+                <div class="city-info-card">
+                    <h3 id="culture-heading" data-i18n="culture_traditions">Culture & Traditions</h3>
+                    <p id="culture-content">{{ city.culture_en }}</p>
+                </div>
+                
+                <div class="city-info-card">
+                    <h3 id="landmarks-heading" data-i18n="historical_landmarks">Historical Landmarks</h3>
+                    <p id="landmarks-content">{{ city.landmarks_en }}</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="/" class="btn" data-i18n="back_to_map">Back to Map</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/city-data.js') }}"></script>
+{% endblock %}
