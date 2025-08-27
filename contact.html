@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - إكسيس وار</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">إكسيس وار</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="contact.html" class="active">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-header">
+            <div class="container">
+                <h2>تواصل معنا</h2>
+                <p>نحن هنا للإجابة على استفساراتك ومساعدتك في اختيار الإكسسوارات المناسبة</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">الاسم</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">الرسالة</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">إرسال</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="info-card">
+                    <h3>العنوان</h3>
+                    <p>شارع الأمير محمد بن عبدالعزيز، الرياض، المملكة العربية السعودية</p>
+                </div>
+                <div class="info-card">
+                    <h3>رقم الهاتف</h3>
+                    <p>+966 12 345 6789</p>
+                </div>
+                <div class="info-card">
+                    <h3>البريد الإلكتروني</h3>
+                    <p>info@exiswar.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; 2023 - إكسيس وار</p>
+        </div>
+    </footer>
+
+    <div id="notification" class="notification">
+        <p id="notification-text"></p>
+    </div>
+
+    <script src="js/main.js"></script>
+
+    <a href="https://wa.me/212615627216" class="whatsapp-float" target="_blank" title="تواصل معنا عبر واتساب">
+        <img src="img/icons8-whatsapp-100.png" alt="واتساب" width="70" height="70">
+    </a>
+</body>
+</html>

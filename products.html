@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات - إكسيس وار</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">إكسيس وار</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html" class="active">المنتجات</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-header">
+            <div class="container">
+                <h2>منتجاتنا</h2>
+                <p>اكتشفي مجموعتنا المميزة من الإكسسوارات الأنيقة</p>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="img/téléchargement.jpg" alt="خاتم ذهبي">
+                        <h3>خاتم ذهبي أنيق</h3>
+                        <p>خاتم مطلي بالذهب بتصميم عصري وأنيق</p>
+                        <div class="product-price">120 د.م</div>
+                        <button class="btn"  onclick="addToCart('خاتم ذهبي أنيق')">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/téléchargement (1).jpg" alt="سوار فضي">
+                        <h3>سوار فضي مميز</h3>
+                        <p>سوار فضي مع تطعيمات من الكريستال</p>
+                        <div class="product-price">85 د.م</div>
+                        <button class="btn" onclick="addToCart('سوار فضي مميز')">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/téléchargement (2).jpg" alt="قلادة ناعمة">
+                        <h3>قلادة ناعمة</h3>
+                        <p>قلادة رقيقة مع قلب صغير مرصع بالزركون</p>
+                        <div class="product-price">150 د.م</div>
+                        <button class="btn" onclick="addToCart('قلادة ناعمة')">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/images.jpg" alt="أقراط ذهبية">
+                        <h3>أقراط ذهبية</h3>
+                        <p>أقراط مطلية بالذهب بتصميم كلاسيكي</p>
+                        <div class="product-price">95 د.م</div>
+                        <button class="btn" onclick="addToCart('أقراط ذهبية')">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/téléchargement (5).jpg" alt="طقم إكسسوارات">
+                        <h3>طقم إكسسوارات كامل</h3>
+                        <p>طقم يتضمن قلادة وأقراط وخاتم بتصميم متناسق</p>
+                        <div class="product-price">280 د.م</div>
+                        <button class="btn" onclick="addToCart('طقم إكسسوارات كامل')">أضف إلى السلة</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/téléchargement (6).jpg" alt="خلخال فضي">
+                        <h3>خلخال فضي</h3>
+                        <p>خلخال فضي مع تعليقات صغيرة مميزة</p>
+                        <div class="product-price">75 د.م </div>
+                        <button class="btn" onclick="addToCart('خلخال فضي')">أضف إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; 2023 - إكسيس وار</p>
+        </div>
+    </footer>
+
+    <div id="notification" class="notification">
+        <p id="notification-text"></p>
+    </div>
+
+    <script src="js/main.js"></script>
+        <a href="https://wa.me/212615627216" class="whatsapp-float" target="_blank" title="تواصل معنا عبر واتساب">
+        <img src="img/icons8-whatsapp-100.png" alt="واتساب" width="70" height="70">
+    </a>
+</body>
+</html>
